@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+
+<header class="main-header  ">
+  <div class="inner">
+    <div class="main-header__row">
+      <a class="main-header__logo" href="http://dev-bitrix.severnaya.ru/">
+        <img src="http://dev-bitrix.severnaya.ru/local/templates/severnaya/assets/images/1f5fdc1e2d35777a72aa.svg"
+             alt="Северная Птицефабрика" data-fixed-src="logo-fixed.svg" width="120">
+        <img src="http://dev-bitrix.severnaya.ru/local/templates/severnaya/assets/images/fixed-logo.svg" class="mobile" alt="">
+      </a>
+      <div class="main-header__column main-header__column--left">
+        <div class="main-header__address">
+          Адрес доставки:
+          <button class="js-address-change" type="button">Выберите адрес</button>
+        </div>
+        <div class="main-header__menu">
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link " href="http://dev-bitrix.severnaya.ru/stocks/">Акции</a>
+              </li>
+
+              <li class="main-nav__item">
+                <a class="main-nav__link " href="http://dev-bitrix.severnaya.ru/catalog/">Каталог</a>
+                <ul class="main-nav__inner-menu">
+
+
+                  <li class="main-nav__inner-item">
+                    <a class="main-nav__inner-link" href="http://dev-bitrix.severnaya.ru/catalog/okhlazhdennaya-kuritsa/">
+                      Охлажденная курица                                                                                            <span class="main-nav__image">
+                                                    <img class="lazy-img" data-src="../upload/resize_cache/iblock/333/100_100_1/5d48g4ra0uhgl7t6y0t3ft5cfb7pcy1y.png"
+                                                         alt="Охлажденная курица">
+                                                </span>
+
+                    </a>
+                  </li>
+
+                  <li class="main-nav__inner-item">
+                    <a class="main-nav__inner-link" href="http://dev-bitrix.severnaya.ru/catalog/polufabrikaty-premium/">
+                      Полуфабрикаты премиум                                                                                            <span class="main-nav__image">
+                                                    <img class="lazy-img" data-src="../upload/resize_cache/iblock/ca8/100_100_1/eshqfv29xi9opawntwlg0m0ry0ndh0vc.png"
+                                                         alt="Полуфабрикаты премиум">
+                                                </span>
+
+                    </a>
+                  </li>
+
+                  <li class="main-nav__inner-item">
+                    <a class="main-nav__inner-link" href="http://dev-bitrix.severnaya.ru/catalog/yaytsa/">
+                      Яйца                                                                                            <span class="main-nav__image">
+                                                    <img class="lazy-img" data-src="../upload/resize_cache/iblock/6a9/100_100_1/ntuep4adwjx29il58kpkjgw1a7uz8q6o.png"
+                                                         alt="Яйца">
+                                                </span>
+
+                    </a>
+                  </li>
+
+
+
+                </ul>
+              </li>
+
+              <li class="main-nav__item">
+                <a class="main-nav__link " href="http://dev-bitrix.severnaya.ru/about/">О нас</a>
+                <ul class="main-nav__inner-menu">
+                  <li class="main-nav__inner-item">
+                    <a class="main-nav__inner-link" href="http://dev-bitrix.severnaya.ru/catalog/okhlazhdennaya-kuritsa/">
+                      Птицефабрика
+                      <span class="main-nav__image">
+                                                <img class="lazy-img" data-src="../upload/resize_cache/iblock/333/100_100_1/5d48g4ra0uhgl7t6y0t3ft5cfb7pcy1y.png"
+                                                     alt="Птицефабрика">
+                                            </span>
+
+                    </a>
+                  </li>
+
+                  <li class="main-nav__inner-item">
+                    <a class="main-nav__inner-link" href="http://dev-bitrix.severnaya.ru/catalog/polufabrikaty-premium/">
+                      Бренды
+                      <span class="main-nav__image">
+                                                <img class="lazy-img" data-src="../upload/resize_cache/iblock/ca8/100_100_1/eshqfv29xi9opawntwlg0m0ry0ndh0vc.png"
+                                                     alt="Бренды">
+                                            </span>
+
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="main-nav__item">
+                <a class="main-nav__link selected" href="index.html">Оплата и доставка</a>
+              </li>
+
+            </ul>
+          </nav>
+        </div>
+        <div class="main-header__search">
+          <div class="header-search">
+            <div class="header-search__overlay"></div>
+            <div class="header-search__body">
+              <div class="header-search__inner">
+                <form class="header-search__form" autocomplete="off" action="http://dev-bitrix.severnaya.ru/search/"
+                      data-url="/search.php" method="get">
+                  <input class="header-search__input" type="search" name="q" placeholder="Что вы ищете?"/>
+                  <button class="header-search__reset" type="reset">
+                    <svg aria-label="Иконка">
+                      <use xlink:href="http://dev-bitrix.severnaya.ru/local/templates/severnaya/assets/images/svg-sprite.svg#close-circle"></use>
+                    </svg>
+                  </button>
+                  <button class="header-search__sumbit btn btn--orange btn--small" type="submit">
+                    Поиск
+                  </button>
+                </form>
+                <div class="header-search__result">
+                  <div class="header-search__result-container"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="main-header__phone main-header__phone--tablet" href="tel:88123393006">
+          8 (812) 339-30-06                </a>
+      </div>
+      <div class="main-header__column main-header__column--right">
+        <a class="main-header__phone" href="tel:88123393006">
+          8 (812) 339-30-06                </a>
+        <div class="main-header__actions">
+          <button class="main-header__action js-auth-trigger">
+            <svg aria-label="Иконка">
+              <use xlink:href="http://dev-bitrix.severnaya.ru/local/templates/severnaya/assets/images/svg-sprite.svg#account"></use>
+            </svg>
+          </button>
+          <button class="main-header__action js-search-trigger">
+            <svg aria-label="Иконка">
+              <use xlink:href="http://dev-bitrix.severnaya.ru/local/templates/severnaya/assets/images/svg-sprite.svg#search"></use>
+            </svg>
+          </button>
+          <a class="main-header__action" href="http://dev-bitrix.severnaya.ru/personal/cart">
+            <svg aria-label="Иконка">
+              <use xlink:href="http://dev-bitrix.severnaya.ru/local/templates/severnaya/assets/images/svg-sprite.svg#cart_new"></use>
+            </svg>
+            <span class="main-header__counter js-cart-counter">
+                            0                        </span>
+          </a>
+        </div>
+      </div>
+      <div class="main-header__hamburger">
+        <div class="hamburger">
+          <div class="hamburger__line"></div>
+          <div class="hamburger__line"></div>
+          <div class="hamburger__line"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="mobile-nav">
+  <div class="mobile-nav__background"></div>
+  <div class="mobile-nav__content">
+    <div class="mobile-nav__inner">
+      <ul class="mobile-nav__menu">
+
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link" href="http://dev-bitrix.severnaya.ru/stocks/">
+            Акции                    </a>
+        </li>
+
+        <li class="mobile-nav__item">
+          <button type="button" class="mobile-nav__button">
+            Каталог                    </button>
+          <ul class="mobile-nav__sublist">
+            <li class="nav__subitem">
+              <a class="mobile-nav__link mobile-nav__link--small" href="http://dev-bitrix.severnaya.ru/catalog/">
+                Смотреть все
+              </a>
+            </li>
+
+
+            <li class="nav__subitem">
+              <a class="mobile-nav__link mobile-nav__link--small" href="http://dev-bitrix.severnaya.ru/catalog/okhlazhdennaya-kuritsa/">
+                Охлажденная курица                                    </a>
+            </li>
+
+            <li class="nav__subitem">
+              <a class="mobile-nav__link mobile-nav__link--small" href="http://dev-bitrix.severnaya.ru/catalog/polufabrikaty-premium/">
+                Полуфабрикаты премиум                                    </a>
+            </li>
+
+            <li class="nav__subitem">
+              <a class="mobile-nav__link mobile-nav__link--small" href="http://dev-bitrix.severnaya.ru/catalog/yaytsa/">
+                Яйца                                    </a>
+            </li>
+
+
+
+
+          </ul>
+        </li>
+
+
+
+
+
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link" href="http://dev-bitrix.severnaya.ru/about/">
+            О птицефабрике                    </a>
+        </li>
+
+
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link" href="index.html">
+            Оплата и доставка                    </a>
+        </li>
+
+      </ul>
+      <div class="mobile-nav__address">
+        <span>Адрес доставки:</span>
+        <button class="js-address-change" type="button">
+          Выберите адрес                </button>
+      </div>
+      <div class="mobile-nav__footer">
+        <div class="mobile-nav__info">
+          <p class="mobile-nav__legal">
+            Акционерное общество «Птицефабрика «Северная», ИНН 4706002688, ОГРН 1024701330741,                     Россия, 187322, Ленинградская область, Кировский муниципальный район, Синявинское городское                     поселение, Дорога «Подъезд к Синявинским Высотам от автодороги «Кола», здание 1а.                    </p>
+          <a class="mobile-nav__map-link" target="_blank" href="https://severnaya.ru/contacts/">
+            Показать на карте
+          </a>
+        </div>
+        <div class="mobile-nav__contacts">
+          <a class="mobile-nav__phone" href="tel:88123393006">
+            8 (812) 339-30-06                    </a>
+          <div class="mobile-nav__socials">
+            <ul class="socials">
+              <li class="socials__item">
+                <a class="socials__link" href="https://zen.yandex.ru/id/606eee5987ccd82c84486274" rel="noopener" target="_blank">
+                  <img class="lazy-img" data-src="/upload/iblock/1e4/gwqsenpn3y5eclc2y1r7d6d9acuuevoq.png" alt="Дзен">
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="https://t.me/severnayaru" rel="noopener" target="_blank">
+                  <img class="lazy-img" data-src="/upload/iblock/0ce/x0f4q79er773ppmyuife3sxzujemmcw8.svg" alt="Телеграм">
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="https://vk.com/ao_severnaya" rel="noopener" target="_blank">
+                  <img class="lazy-img" data-src="/upload/iblock/9e5/npnb0q41j5d0fm7jkgam0ekgt09zkzhs.svg" alt="Вконтакте">
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="https://ok.ru/group/60230191874265" rel="noopener" target="_blank">
+                  <img class="lazy-img" data-src="/upload/iblock/ace/4dlqksgpqlvvxccheyxtnzzq91ww1f1r.png" alt="Одноклассники">
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="page-header">
+  <div class="page-header__background">
+    <picture>
+      <source srcset="http://dev-bitrix.severnaya.ru/local/templates/severnaya/assets/images/3ebb900704132b4d33e2.svg"
+              media="(min-width: 1280px)">
+      <source srcset="http://dev-bitrix.severnaya.ru/local/templates/severnaya/assets/images/1cfd3f86214050408a98.svg"
+              media="(min-width: 768px)">
+      <img src="http://dev-bitrix.severnaya.ru/local/templates/severnaya/assets/images/c319e613d0fdf234278b.svg" alt="">
+    </picture>
+  </div>
+  <div class="inner">
+    <h1 class="page-header__title">Бренды</h1>
+  </div>
+</div>
+<div class="breadcrumbs"><div class="inner"><ul class="breadcrumbs__list" itemscope itemtype="http://schema.org/BreadcrumbList">
+  <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <a href="http://dev-bitrix.severnaya.ru/" class="breadcrumbs__link" title="Главная" itemprop="url">
+      <span itemprop="name">Главная</span>
+    </a>
+    <meta itemprop="position" content="1" />
+  </li>
+  <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <a href="index.html" class="breadcrumbs__link" title="Оплата и доставка" itemprop="url">
+      <span itemprop="name">Оплата и доставка</span>
+    </a>
+    <meta itemprop="position" content="2" />
+  </li>
+</ul></div></div>
+
+<section class="content-section sales">
+  <div class="inner">
+    <div class="index-sales__header">
+      <div class="heading heading--flex">
+        <h2 class="heading__title">Акции</h2>
+        <a class="heading__link" href="/stocks/">
+          Все акции
+        </a>
+      </div>
+    </div>
+
+    <div class="sales-header">
+      <div class="sales-list">
+        <div class="sales-card sales-card--big" style="background-image: url('./img/sales.png')">
+          <div class="sales-card__text">
+            <a href="" class="sales-card__title">Подарок на день рождения</a>
+            <p class="sales-card__subtitle">На скидку 10%</p>
+          </div>
+        </div>
+
+        <div class="sales-card" style="background-image: url('./img/sales.png')">
+          <div class="sales-card__text">
+            <a href="" class="sales-card__title">Подарок на день рождения</a>
+            <p class="sales-card__subtitle">На скидку 10%</p>
+          </div>
+        </div>
+
+        <div class="sales-card sales-card--big" style="background-image: url('./img/sales.png')">
+          <div class="sales-card__text">
+            <a href="" class="sales-card__title">Подарок на день рождения</a>
+            <p class="sales-card__subtitle">На скидку 10%</p>
+          </div>
+        </div>
+
+        <div class="sales-card" style="background-image: url('./img/sales.png')">
+          <div class="sales-card__text">
+            <a href="" class="sales-card__title">Подарок на день рождения</a>
+            <p class="sales-card__subtitle">На скидку 10%</p>
+          </div>
+        </div>
+
+        <div class="sales-card sales-card--big" style="background-image: url('./img/sales.png')">
+          <div class="sales-card__text">
+            <a href="" class="sales-card__title">Подарок на день рождения</a>
+            <p class="sales-card__subtitle">На скидку 10%</p>
+          </div>
+        </div>
+
+        <div class="sales-card" style="background-image: url('./img/sales.png')">
+          <div class="sales-card__text">
+            <a href="" class="sales-card__title">Подарок на день рождения</a>
+            <p class="sales-card__subtitle">На скидку 10%</p>
+          </div>
+        </div>
+
+        <div class="sales-card" style="background-image: url('./img/sales.png')">
+          <div class="sales-card__text">
+            <a href="" class="sales-card__title">Подарок на день рождения</a>
+            <p class="sales-card__subtitle">На скидку 10%</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="main-footer">
+  <div class="inner">
+    <div class="main-footer__row main-footer__row--top">
+      <a class="main-footer__logo" href="http://dev-bitrix.severnaya.ru/">
+        <img class="lazy-img" data-src="http://dev-bitrix.severnaya.ru/local/templates/severnaya/assets/images/2340e0c8a11ac6771fdb.svg" alt=""
+             width="264" height="91">
+        <span class="main-footer__site main-footer__link main-footer__link--bold">
+                                    </span>
+      </a>
+      <button class="main-footer__appeal btn btn--transparent js-feedback-trigger" type="button">
+        Пожелания и предложения
+      </button>
+    </div>
+    <div class="main-footer__row main-footer__row--medium">
+      <div class="main-footer__info">
+        <p>Акционерное общество «Птицефабрика «Северная», ИНН 4706002688, ОГРН 1024701330741,                     Россия, 187322, Ленинградская область, Кировский муниципальный район, Синявинское городское                     поселение, Дорога «Подъезд к Синявинским Высотам от автодороги «Кола», здание 1а.</p>
+        <a class="main-footer__link main-footer__link--bold" target="_blank"
+           href="https://severnaya.ru/contacts/">Показать на карте</a>
+      </div>
+      <div class="main-footer__menu">
+        <nav class="footer-nav">
+
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="http://dev-bitrix.severnaya.ru/stocks/">
+                Акции                </a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="http://dev-bitrix.severnaya.ru/catalog/okhlazhdennaya-kuritsa/">
+                Охлажденная курица                </a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="http://dev-bitrix.severnaya.ru/catalog/polufabrikaty-premium/">
+                Полуфабрикаты премиум                </a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="http://dev-bitrix.severnaya.ru/catalog/yaytsa/">
+                Яйца                </a>
+            </li>
+
+          </ul>
+
+
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="http://dev-bitrix.severnaya.ru/catalog/">
+                Каталог                </a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="http://dev-bitrix.severnaya.ru/about/">
+                О птицефабрике                </a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="index.html">
+                Оплата и доставка                </a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="pickup/index.html">
+                Самовывоз⠀⠀⠀⠀⠀⠀⠀⠀                </a>
+            </li>
+
+          </ul>
+
+        </nav>
+      </div>
+      <div class="main-footer__contacts">
+        <a class="main-footer__link" href="tel: 88123393006">
+          <div class="icon"><svg aria-label="Иконка">
+            <use xlink:href="http://dev-bitrix.severnaya.ru/local/templates/severnaya/assets/images/svg-sprite.svg#phone"></use>
+          </svg>
+          </div>
+          8 (812) 339-30-06                </a>
+        <a class="main-footer__link" href="mailto: shop@severnaya.ru">
+          <div class="icon">
+            <svg aria-label="Иконка">
+              <use xlink:href="http://dev-bitrix.severnaya.ru/local/templates/severnaya/assets/images/svg-sprite.svg#mail"></use>
+            </svg>
+          </div>
+          shop@severnaya.ru                </a>
+        <a class="main-footer__link" target="_blank" href="http://dev-bitrix.severnaya.ru/upload/policy.pdf">Политика конфиденциальности</a><a
+              class="main-footer__link " download href="http://dev-bitrix.severnaya.ru/upload/Oferta_Shop_Severnaya.doc">Договор публичной оферты
+      </a>
+
+        <div class="main-footer__payments">
+          <ul class="payment-list">
+            <li class="payment-list__item">
+              <img class="lazy-img" data-src="/upload/iblock/de1/5lppp5fdicwhds78h7wxkc64tnqlgypl.svg" alt="Мир">
+            </li>
+            <li class="payment-list__item">
+              <img class="lazy-img" data-src="/upload/iblock/a88/c7ge1swo4n39xt7rin4tito5q705l7pf.svg" alt="Visa">
+            </li>
+            <li class="payment-list__item">
+              <img class="lazy-img" data-src="/upload/iblock/323/h2c0xrk36x27ilu0w7yl362kwpk4h00a.svg" alt="Master Card">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="main-footer__row main-footer__row--bottom">
+      <div class="main-footer__socials">
+        <ul class="socials">
+          <li class="socials__item">
+            <a class="socials__link" href="https://zen.yandex.ru/id/606eee5987ccd82c84486274" rel="noopener" target="_blank">
+              <img class="lazy-img" data-src="/upload/iblock/1e4/gwqsenpn3y5eclc2y1r7d6d9acuuevoq.png" alt="Дзен">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="https://t.me/severnayaru" rel="noopener" target="_blank">
+              <img class="lazy-img" data-src="/upload/iblock/0ce/x0f4q79er773ppmyuife3sxzujemmcw8.svg" alt="Телеграм">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="https://vk.com/ao_severnaya" rel="noopener" target="_blank">
+              <img class="lazy-img" data-src="/upload/iblock/9e5/npnb0q41j5d0fm7jkgam0ekgt09zkzhs.svg" alt="Вконтакте">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="https://ok.ru/group/60230191874265" rel="noopener" target="_blank">
+              <img class="lazy-img" data-src="/upload/iblock/ace/4dlqksgpqlvvxccheyxtnzzq91ww1f1r.png" alt="Одноклассники">
+            </a>
+          </li>
+
+        </ul>
+      </div>
+      <div class="main-footer__copyright">
+        2022 ©Птицефабрика «Северная»
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
